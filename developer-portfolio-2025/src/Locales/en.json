@@ -30,6 +30,62 @@
         "email": "Enea.alice.it@gmail.com",
         "location": "Novara, Italy",
         "availability": "Available for collaborations"
+    },
+    "hero": {
+        "greeting": "👋 Hi, I'm"
+    },
+    "home": {
+        "featuredProjectsTitle": "Featured",
+        "featuredProjectsTitleHighlight": "Projects",
+        "featuredProjectsDescription": "A selection of my most significant projects demonstrating skills in AI, cloud and full-stack development",
+        "viewAllProjects": "View all projects",
+        "code": "Code",
+        "demo": "Demo",
+        "techStackTitle": "Tech Stack 2025",
+        "techStackDescription": "Modern technologies with which I build scalable, performant and innovative solutions",
+        "proficiencyLevel": "Proficiency level:",
+        "yearsShort": "years",
+        "expert": "Expert",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate",
+        "learning": "Learning"
+    },
+    "about": {
+        "title": "About",
+        "titleHighlight": "Me",
+        "whoAmI": "Who I am",
+        "paragraph1": "I'm a <strong>Full-Stack Developer</strong> passionate about innovative technologies, with a particular focus on <strong>Artificial Intelligence</strong>, <strong>Cloud Computing</strong> and <strong>DevOps practices</strong>. My experience ranges from frontend development with modern frameworks like React and Angular, to backend with Node.js, up to the integration of enterprise systems like Business Central.",
+        "paragraph2": "In recent years I have specialized in integrating <strong>Large Language Models (LLM)</strong> and AI technologies into business applications, creating solutions that automate complex processes and improve user experience. I strongly believe in the importance of writing clean, testable and maintainable code, following established best practices and design patterns.",
+        "paragraph3": "When I'm not coding, I enjoy staying up to date on the latest tech trends, contributing to open source projects and sharing knowledge through blog posts and mentoring.",
+        "experienceTitle": "Professional",
+        "experienceTitleHighlight": "Experience",
+        "educationTitle": "Education",
+        "certificationsTitle": "Certifications",
+        "keyAchievements": "Key Achievements:"
+    },
+    "contact": {
+        "title": "Get in",
+        "titleHighlight": "Touch",
+        "description": "Have a project in mind or want to collaborate? I'm always open to new opportunities and interesting conversations.",
+        "sendMessage": "Send a Message",
+        "nameLabel": "Name *",
+        "namePlaceholder": "Your name",
+        "emailLabel": "Email *",
+        "emailPlaceholder": "your.email@example.com",
+        "subjectLabel": "Subject *",
+        "subjectPlaceholder": "What do you want to talk about?",
+        "messageLabel": "Message *",
+        "messagePlaceholder": "Write your message here...",
+        "sending": "Sending...",
+        "sendButton": "Send Message",
+        "successMessage": "✓ Message sent successfully! I'll get back to you soon.",
+        "infoTitle": "Information",
+        "emailTitle": "Email",
+        "locationTitle": "Location",
+        "statusTitle": "Status",
+        "socialTitle": "Social",
+        "responseTime": "< 24h",
+        "responseTimeLabel": "Average response time"
     }
 }
 

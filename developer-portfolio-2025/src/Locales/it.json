@@ -30,5 +30,61 @@
         "email": "Enea.alice.it@gmail.com",
         "location": "Novara, Italia",
         "availability": "Disponibile per collaborazioni"
+    },
+    "hero": {
+        "greeting": "👋 Ciao, sono"
+    },
+    "home": {
+        "featuredProjectsTitle": "Progetti in",
+        "featuredProjectsTitleHighlight": "Evidenza",
+        "featuredProjectsDescription": "Una selezione dei miei progetti più significativi che dimostrano competenze in AI, cloud e sviluppo full-stack",
+        "viewAllProjects": "Vedi tutti i progetti",
+        "code": "Code",
+        "demo": "Demo",
+        "techStackTitle": "Tech Stack 2025",
+        "techStackDescription": "Tecnologie moderne con cui costruisco soluzioni scalabili, performanti e innovative",
+        "proficiencyLevel": "Livello di competenza:",
+        "yearsShort": "anni",
+        "expert": "Esperto",
+        "advanced": "Avanzato",
+        "intermediate": "Intermedio",
+        "learning": "In apprendimento"
+    },
+    "about": {
+        "title": "About",
+        "titleHighlight": "Me",
+        "whoAmI": "Chi sono",
+        "paragraph1": "Sono un <strong>Full-Stack Developer</strong> appassionato di tecnologie innovative, con particolare focus su <strong>Intelligenza Artificiale</strong>, <strong>Cloud Computing</strong> e <strong>pratiche DevOps</strong>. La mia esperienza spazia dallo sviluppo frontend con framework moderni come React e Angular, al backend con Node.js, fino all'integrazione di sistemi enterprise come Business Central.",
+        "paragraph2": "Negli ultimi anni mi sono specializzato nell'integrazione di <strong>Large Language Models (LLM)</strong> e tecnologie AI nelle applicazioni business, creando soluzioni che automatizzano processi complessi e migliorano l'esperienza utente. Credo fortemente nell'importanza di scrivere codice pulito, testabile e manutenibile, seguendo best practices e design patterns consolidati.",
+        "paragraph3": "Quando non programmo, mi piace rimanere aggiornato sulle ultime tendenze tech, contribuire a progetti open source e condividere conoscenze attraverso blog posts e mentoring.",
+        "experienceTitle": "Esperienza",
+        "experienceTitleHighlight": "Professionale",
+        "educationTitle": "Formazione",
+        "certificationsTitle": "Certificazioni",
+        "keyAchievements": "Key Achievements:"
+    },
+    "contact": {
+        "title": "Mettiamoci in",
+        "titleHighlight": "Contatto",
+        "description": "Hai un progetto in mente o vuoi collaborare? Sono sempre aperto a nuove opportunità e conversazioni interessanti.",
+        "sendMessage": "Invia un Messaggio",
+        "nameLabel": "Nome *",
+        "namePlaceholder": "Il tuo nome",
+        "emailLabel": "Email *",
+        "emailPlaceholder": "tua.email@example.com",
+        "subjectLabel": "Oggetto *",
+        "subjectPlaceholder": "Di cosa vuoi parlare?",
+        "messageLabel": "Messaggio *",
+        "messagePlaceholder": "Scrivi il tuo messaggio qui...",
+        "sending": "Invio in corso...",
+        "sendButton": "Invia Messaggio",
+        "successMessage": "✓ Messaggio inviato con successo! Ti risponderò al più presto.",
+        "infoTitle": "Informazioni",
+        "emailTitle": "Email",
+        "locationTitle": "Posizione",
+        "statusTitle": "Stato",
+        "socialTitle": "Social",
+        "responseTime": "< 24h",
+        "responseTimeLabel": "Tempo medio di risposta"
     }
 }

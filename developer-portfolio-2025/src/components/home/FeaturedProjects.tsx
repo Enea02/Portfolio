@@ -8,8 +8,10 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { FEATURED_PROJECTS } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export const FeaturedProjects: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +23,7 @@ export const FeaturedProjects: React.FC = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Progetti in <span className="gradient-text">Evidenza</span>
+            {t('home.featuredProjectsTitle')} <span className="gradient-text">{t('home.featuredProjectsTitleHighlight')}</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +32,7 @@ export const FeaturedProjects: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Una selezione dei miei progetti più significativi che dimostrano competenze in AI, cloud e sviluppo full-stack
+            {t('home.featuredProjectsDescription')}
           </motion.p>
         </div>
 
@@ -101,7 +103,7 @@ export const FeaturedProjects: React.FC = () => {
                         className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                       >
                         <Github className="h-4 w-4" />
-                        Code
+                        {t('home.code')}
                       </a>
                     )}
                     {project.demoUrl && (
@@ -112,7 +114,7 @@ export const FeaturedProjects: React.FC = () => {
                         className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                       >
                         <ExternalLink className="h-4 w-4" />
-                        Demo
+                        {t('home.demo')}
                       </a>
                     )}
                   </div>
@@ -131,7 +133,7 @@ export const FeaturedProjects: React.FC = () => {
         >
           <Link href="/projects">
             <Button size="lg" variant="outline" className="group">
-              Vedi tutti i progetti
+              {t('home.viewAllProjects')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

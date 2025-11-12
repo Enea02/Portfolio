@@ -6,8 +6,10 @@ import { Mail, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { PERSONAL_INFO, SOCIAL_LINKS } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -62,11 +64,10 @@ export default function ContactPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Mettiamoci in <span className="gradient-text">Contatto</span>
+            {t('contact.title')} <span className="gradient-text">{t('contact.titleHighlight')}</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Hai un progetto in mente o vuoi collaborare? Sono sempre aperto a nuove opportunità 
-            e conversazioni interessanti.
+            {t('contact.description')}
           </p>
         </motion.div>
 
@@ -80,17 +81,17 @@ export default function ContactPage() {
           >
             <Card>
               <CardHeader>
-                <CardTitle>Invia un Messaggio</CardTitle>
+                <CardTitle>{t('contact.sendMessage')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Field */}
                   <div>
-                    <label 
-                      htmlFor="name" 
+                    <label
+                      htmlFor="name"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                     >
-                      Nome *
+                      {t('contact.nameLabel')}
                     </label>
                     <input
                       type="text"
@@ -100,17 +101,17 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-dark-border rounded-lg bg-white dark:bg-dark-card text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                      placeholder="Il tuo nome"
+                      placeholder={t('contact.namePlaceholder')}
                     />
                   </div>
 
                   {/* Email Field */}
                   <div>
-                    <label 
-                      htmlFor="email" 
+                    <label
+                      htmlFor="email"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                     >
-                      Email *
+                      {t('contact.emailLabel')}
                     </label>
                     <input
                       type="email"
@@ -120,17 +121,17 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-dark-border rounded-lg bg-white dark:bg-dark-card text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                      placeholder="tua.email@example.com"
+                      placeholder={t('contact.emailPlaceholder')}
                     />
                   </div>
 
                   {/* Subject Field */}
                   <div>
-                    <label 
-                      htmlFor="subject" 
+                    <label
+                      htmlFor="subject"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                     >
-                      Oggetto *
+                      {t('contact.subjectLabel')}
                     </label>
                     <input
                       type="text"
@@ -140,17 +141,17 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-dark-border rounded-lg bg-white dark:bg-dark-card text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                      placeholder="Di cosa vuoi parlare?"
+                      placeholder={t('contact.subjectPlaceholder')}
                     />
                   </div>
 
                   {/* Message Field */}
                   <div>
-                    <label 
-                      htmlFor="message" 
+                    <label
+                      htmlFor="message"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                     >
-                      Messaggio *
+                      {t('contact.messageLabel')}
                     </label>
                     <textarea
                       id="message"
@@ -160,7 +161,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       rows={6}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-dark-border rounded-lg bg-white dark:bg-dark-card text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                      placeholder="Scrivi il tuo messaggio qui..."
+                      placeholder={t('contact.messagePlaceholder')}
                     />
                   </div>
 
@@ -172,11 +173,11 @@ export default function ContactPage() {
                     className="w-full gap-2"
                   >
                     {isSubmitting ? (
-                      'Invio in corso...'
+                      t('contact.sending')
                     ) : (
                       <>
                         <Send className="h-5 w-5" />
-                        Invia Messaggio
+                        {t('contact.sendButton')}
                       </>
                     )}
                   </Button>
@@ -189,7 +190,7 @@ export default function ContactPage() {
                       className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg"
                     >
                       <p className="text-green-700 dark:text-green-300 text-sm">
-                        ✓ Messaggio inviato con successo! Ti risponderò al più presto.
+                        {t('contact.successMessage')}
                       </p>
                     </motion.div>
                   )}
@@ -208,7 +209,7 @@ export default function ContactPage() {
             {/* Contact Details */}
             <Card>
               <CardHeader>
-                <CardTitle>Informazioni</CardTitle>
+                <CardTitle>{t('contact.infoTitle')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -216,7 +217,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 dark:text-gray-500">Email</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-500">{t('contact.emailTitle')}</p>
                     <a 
                       href={`mailto:${PERSONAL_INFO.email}`}
                       className="text-sm font-medium text-gray-900 dark:text-white hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -231,7 +232,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 dark:text-gray-500">Posizione</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-500">{t('contact.locationTitle')}</p>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">
                       {PERSONAL_INFO.location}
                     </p>
@@ -239,7 +240,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="pt-4 border-t border-gray-200 dark:border-dark-border">
-                  <p className="text-xs text-gray-500 dark:text-gray-500 mb-2">Stato</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-500 mb-2">{t('contact.statusTitle')}</p>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                     <p className="text-sm font-medium text-gray-900 dark:text-white">
@@ -253,7 +254,7 @@ export default function ContactPage() {
             {/* Social Links */}
             <Card>
               <CardHeader>
-                <CardTitle>Social</CardTitle>
+                <CardTitle>{t('contact.socialTitle')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 {SOCIAL_LINKS.map((social) => {
@@ -280,10 +281,10 @@ export default function ContactPage() {
             <Card className="bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 border-none">
               <CardContent className="p-6 text-center">
                 <p className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-2">
-                  &lt; 24h
+                  {t('contact.responseTime')}
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Tempo medio di risposta
+                  {t('contact.responseTimeLabel')}
                 </p>
               </CardContent>
             </Card>
