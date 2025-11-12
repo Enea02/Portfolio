@@ -1,0 +1,35 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "quickLinks": "Quick Links",
+        "connect": "Connect with me"
+    },
+    "const": {
+        "cta_primary": "Discover my projects",
+        "cta_secondary": "Download CV",
+        "cta_contact": "Contact me"
+    },
+    "featured-projects": {
+        "id": "ai-chatbot",
+        "title": "AI Assistant Platform",
+        "description": "Conversational platform with GPT-4 integration for automated customer support",
+        "longDescription": "A complete AI chatbot system with React interface, Node.js backend and OpenAI API integration. Includes conversation management, persistent memory and real-time analytics."
+    },
+    "personalinfo": {
+        "name": "Enea Frontera",
+        "role": "Full-Stack Developer & AI Enthusiast",
+        "tagline": "Building modern solutions with AI, Cloud and DevOps",
+        "bio": "Full-stack developer with a strong focus on modern and AI-ready technologies. Experienced in Angular, TypeScript and Business Central, now specializing in cloud-native architectures, DevOps practices and AI/LLM integration.",
+        "email": "Enea.alice.it@gmail.com",
+        "location": "Novara, Italy",
+        "availability": "Available for collaborations"
+    }
+}
+
