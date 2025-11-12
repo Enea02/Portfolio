@@ -1,6 +1,6 @@
 # Images Directory
 
-Place your profile photo here with the name `IMG_6321.jpg`
+Place your profile photo here with the name `IMG_6321.CR2`
 
 The photo will be displayed on the homepage with beautiful 3D transitions.
 

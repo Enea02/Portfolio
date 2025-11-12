@@ -94,7 +94,7 @@ export const ProfilePhoto3D: React.FC = () => {
             {/* Photo */}
             <div className="relative w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800">
               <Image
-                src="/images/IMG_6321.jpg"
+                src="/images/IMG_6321.CR2"
                 alt="Profile Photo"
                 fill
                 className="object-cover"

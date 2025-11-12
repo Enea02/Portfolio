@@ -23,86 +23,6 @@ export const Hero: React.FC = () => {
      
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-<<<<<<< HEAD
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Animated greeting */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <p className="text-primary-600 dark:text-primary-400 font-medium mb-4">
-              👋 Ciao, sono
-            </p>
-          </motion.div>
-
-          {/* Name with gradient */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
-          >
-            <span className="gradient-text">{t('personal-info.name')}</span>
-          </motion.h1>
-
-          {/* Role */}
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6"
-          >
-            {t('personal-info.role')}
-          </motion.h2>
-
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
-          >
-            {t('personal-info.tagline')}
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
-          >
-            <Link href="/projects">
-              <Button size="lg" className="group">
-                {t('const.cta_primary')}
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            <a href="/resume.pdf" download>
-              <Button variant="outline" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                {t('const.cta_secondary')}
-              </Button>
-            </a>
-          </motion.div>
-
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex justify-center gap-4"
-          >
-            {SOCIAL_LINKS.slice(0, 2).map((social) => (
-              <a
-                key={social.platform}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white dark:hover:bg-primary-500 transition-all hover:scale-110"
-                aria-label={social.platform}
-=======
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left column - Text content */}
@@ -112,7 +32,6 @@ export const Hero: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
->>>>>>> a11ced774ee1f6612078e30e4da1d7d5cefbff7a
               >
                 <p className="text-primary-600 dark:text-primary-400 font-medium mb-4">
                   {t('hero.greeting')}
@@ -126,7 +45,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
               >
-                <span className="gradient-text">{t('personalinfo.name')}</span>
+                <span className="gradient-text">{t('personal-info.name')}</span>
               </motion.h1>
 
               {/* Role */}
@@ -136,7 +55,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6"
               >
-                {t('personalinfo.role')}
+                {t('personal-info.role')}
               </motion.h2>
 
               {/* Tagline */}
@@ -146,7 +65,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-8"
               >
-                {t('personalinfo.tagline')}
+                {t('personal-info.tagline')}
               </motion.p>
 
               {/* CTA Buttons */}
