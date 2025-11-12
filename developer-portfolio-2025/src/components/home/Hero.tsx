@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
           >
-            {t('personalinfo.tagline')}
+            {t('personal-info.tagline')}
           </motion.p>
 
           {/* CTA Buttons */}

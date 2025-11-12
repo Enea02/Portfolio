@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next';
 // Personal Information - CUSTOMIZE THIS!
 export const PERSONAL_INFO = {
   
-  name: 'personalinfo.name',
-  role: 'personalinfo.role',
-  tagline: 'personalinfo.tagline',
-  bio: 'personalinfo.bio',
-  email:'personalinfo.email',
-  location: 'personalinfo.location',
-  availability: 'personalinfo.availability',
+  name: 'personal-info.name',
+  role: 'personal-info.role',
+  tagline: 'personal-info.tagline',
+  bio: 'personal-info.bio',
+  email:'personal-info.email',
+  location: 'personal-info.location',
+  availability: 'personal-info.availability',
 };
 
 // Social Links

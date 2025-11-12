@@ -22,7 +22,7 @@
         "description": "Plateforme conversationnelle avec intégration GPT-4 pour l'automatisation du support client",
         "longDescription": "Système complet de chatbot IA avec interface React, backend Node.js et intégration avec l'API OpenAI. Comprend la gestion des conversations, la mémoire persistante et l'analytique en temps réel."
     },
-    "personalinfo": {
+    "personal-info": {
         "name": "Enea Frontera",
         "role": "Développeur Full-Stack & Passionné d'IA",
         "tagline": "Je construis des solutions modernes avec IA, Cloud et DevOps",
