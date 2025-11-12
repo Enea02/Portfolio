@@ -93,14 +93,16 @@ export const ProfilePhoto3D: React.FC = () => {
 
             {/* Photo */}
             <div className="relative w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800">
-              <Image
-                src="/images/IMG_6321.CR2"
-                alt="Profile Photo"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
-              />
+              {/* Placeholder - Replace with your actual image */}
+              <div className="w-full h-full flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
+                    <span className="text-6xl font-bold text-white">E</span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Add your photo</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">Place image in /public/images/</p>
+                </div>
+              </div>
             </div>
 
             {/* Shine effect on hover */}
