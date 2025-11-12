@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <p className="text-primary-600 dark:text-primary-400 font-medium mb-4">
-              👋 Ciao, sono
+              {t('hero.greeting')}
             </p>
           </motion.div>
 
@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            <span className="gradient-text">{t('personal-info.name')}</span>
+            <span className="gradient-text">{t('personalinfo.name')}</span>
           </motion.h1>
 
           {/* Role */}
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6"
           >
-            {t('personal-info.role')}
+            {t('personalinfo.role')}
           </motion.h2>
 
           {/* Tagline */}

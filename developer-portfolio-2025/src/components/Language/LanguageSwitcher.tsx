@@ -59,7 +59,6 @@ if (typeof window !== 'undefined') localStorage.setItem('lng', lng);
 
 
 return (
-<div className="absolute top-4 right-4 z-50">
 <div className="flex items-center gap-2 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-gray-200 dark:border-gray-700 px-2 py-1 rounded-full shadow-sm">
 <span className="sr-only">{t('language.label')}</span>
 
@@ -104,7 +103,6 @@ title="Français"
 <FlagFR className="w-full h-full" />
 </span>
 </button>
-</div>
 </div>
 );
 };
