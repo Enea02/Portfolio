@@ -30,5 +30,61 @@
         "email": "Enea.alice.it@gmail.com",
         "location": "Novare, Italie",
         "availability": "Disponible pour des collaborations"
+    },
+    "hero": {
+        "greeting": "👋 Bonjour, je suis"
+    },
+    "home": {
+        "featuredProjectsTitle": "Projets",
+        "featuredProjectsTitleHighlight": "en vedette",
+        "featuredProjectsDescription": "Une sélection de mes projets les plus significatifs démontrant des compétences en IA, cloud et développement full-stack",
+        "viewAllProjects": "Voir tous les projets",
+        "code": "Code",
+        "demo": "Démo",
+        "techStackTitle": "Tech Stack 2025",
+        "techStackDescription": "Technologies modernes avec lesquelles je construis des solutions évolutives, performantes et innovantes",
+        "proficiencyLevel": "Niveau de compétence:",
+        "yearsShort": "ans",
+        "expert": "Expert",
+        "advanced": "Avancé",
+        "intermediate": "Intermédiaire",
+        "learning": "En apprentissage"
+    },
+    "about": {
+        "title": "À propos",
+        "titleHighlight": "de moi",
+        "whoAmI": "Qui je suis",
+        "paragraph1": "Je suis un <strong>Développeur Full-Stack</strong> passionné par les technologies innovantes, avec un accent particulier sur l'<strong>Intelligence Artificielle</strong>, le <strong>Cloud Computing</strong> et les <strong>pratiques DevOps</strong>. Mon expérience va du développement frontend avec des frameworks modernes comme React et Angular, au backend avec Node.js, jusqu'à l'intégration de systèmes d'entreprise comme Business Central.",
+        "paragraph2": "Ces dernières années, je me suis spécialisé dans l'intégration des <strong>Large Language Models (LLM)</strong> et des technologies IA dans les applications métier, créant des solutions qui automatisent des processus complexes et améliorent l'expérience utilisateur. Je crois fermement en l'importance d'écrire du code propre, testable et maintenable, en suivant les meilleures pratiques et les modèles de conception établis.",
+        "paragraph3": "Quand je ne code pas, j'aime rester à jour sur les dernières tendances technologiques, contribuer à des projets open source et partager des connaissances à travers des articles de blog et du mentorat.",
+        "experienceTitle": "Expérience",
+        "experienceTitleHighlight": "Professionnelle",
+        "educationTitle": "Formation",
+        "certificationsTitle": "Certifications",
+        "keyAchievements": "Réalisations clés:"
+    },
+    "contact": {
+        "title": "Prenons",
+        "titleHighlight": "contact",
+        "description": "Vous avez un projet en tête ou vous souhaitez collaborer? Je suis toujours ouvert à de nouvelles opportunités et à des conversations intéressantes.",
+        "sendMessage": "Envoyer un message",
+        "nameLabel": "Nom *",
+        "namePlaceholder": "Votre nom",
+        "emailLabel": "Email *",
+        "emailPlaceholder": "votre.email@exemple.com",
+        "subjectLabel": "Sujet *",
+        "subjectPlaceholder": "De quoi voulez-vous parler?",
+        "messageLabel": "Message *",
+        "messagePlaceholder": "Écrivez votre message ici...",
+        "sending": "Envoi en cours...",
+        "sendButton": "Envoyer le message",
+        "successMessage": "✓ Message envoyé avec succès! Je vous répondrai bientôt.",
+        "infoTitle": "Informations",
+        "emailTitle": "Email",
+        "locationTitle": "Localisation",
+        "statusTitle": "Statut",
+        "socialTitle": "Réseaux sociaux",
+        "responseTime": "< 24h",
+        "responseTimeLabel": "Temps de réponse moyen"
     }
 }
