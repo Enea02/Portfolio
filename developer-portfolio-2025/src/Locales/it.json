@@ -134,6 +134,33 @@
             }
         }
     },
+    "blog": {
+        "title": "Blog",
+        "description": "Pensieri, tutorial e approfondimenti su sviluppo software, AI e tecnologie moderne",
+        "readingTime": "min di lettura",
+        "readArticle": "Leggi l'articolo",
+        "readMore": "Leggi altri articoli",
+        "backToBlog": "Torna al blog",
+        "viewOnLinkedin": "Vedi su LinkedIn",
+        "follow": "Segui",
+        "likes": "Likes",
+        "comments": "Commenti",
+        "shares": "Condivisioni",
+        "tags": "Tags",
+        "author": "Autore",
+        "publishedOn": "Pubblicato il",
+        "updatedOn": "Aggiornato il",
+        "moreContentSoon": "Più contenuti in arrivo",
+        "moreContentDescription": "Sto lavorando su nuovi articoli tecnici. Torna presto per aggiornamenti!",
+        "noPosts": "Nessun post disponibile",
+        "noPostsDescription": "I post di LinkedIn non sono ancora stati sincronizzati.",
+        "noPostsHint": "Usa l'API",
+        "noPostsHintSuffix": "per importare i post.",
+        "errorLoading": "Errore nel caricamento dei post",
+        "loading": "Caricamento in corso...",
+        "postNotFound": "Post non trovato",
+        "category": "Categoria"
+    },
     "contact": {
         "title": "Mettiamoci in",
         "titleHighlight": "Contatto",

@@ -134,6 +134,33 @@
             }
         }
     },
+    "blog": {
+        "title": "Blog",
+        "description": "Thoughts, tutorials and insights on software development, AI and modern technologies",
+        "readingTime": "min read",
+        "readArticle": "Read article",
+        "readMore": "Read more articles",
+        "backToBlog": "Back to blog",
+        "viewOnLinkedin": "View on LinkedIn",
+        "follow": "Follow",
+        "likes": "Likes",
+        "comments": "Comments",
+        "shares": "Shares",
+        "tags": "Tags",
+        "author": "Author",
+        "publishedOn": "Published on",
+        "updatedOn": "Updated on",
+        "moreContentSoon": "More content coming soon",
+        "moreContentDescription": "I'm working on new technical articles. Check back soon for updates!",
+        "noPosts": "No posts available",
+        "noPostsDescription": "LinkedIn posts have not been synced yet.",
+        "noPostsHint": "Use the API",
+        "noPostsHintSuffix": "to import posts.",
+        "errorLoading": "Error loading posts",
+        "loading": "Loading...",
+        "postNotFound": "Post not found",
+        "category": "Category"
+    },
     "contact": {
         "title": "Get in",
         "titleHighlight": "Touch",
