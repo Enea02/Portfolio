@@ -157,7 +157,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         {/* Highlights */}
         <div className="mb-6 space-y-2">
           <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            Key Results:
+            Risultati Principali:
           </p>
           {project.highlights.map((highlight, idx) => (
             <p key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
@@ -178,7 +178,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             >
               <Button variant="outline" className="w-full gap-2">
                 <Github className="h-4 w-4" />
-                View Code
+                Vedi Codice
               </Button>
             </a>
           )}
@@ -191,7 +191,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             >
               <Button variant="primary" className="w-full gap-2">
                 <ExternalLink className="h-4 w-4" />
-                Live Demo
+                Demo Live
               </Button>
             </a>
           )}
