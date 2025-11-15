@@ -29,6 +29,7 @@ export interface Technology {
 
 export interface BlogPost {
   id: string;
+  slug: string;
   title: string;
   excerpt: string;
   content: string;
@@ -36,6 +37,18 @@ export interface BlogPost {
   tags: string[];
   readingTime: number;
   imageUrl?: string;
+  category: string;
+  linkedinUrl?: string;
+  linkedinPostId?: string;
+  author: {
+    name: string;
+    image?: string;
+    linkedinUrl?: string;
+  };
+  likes?: number;
+  comments?: number;
+  shares?: number;
+  updatedAt?: string;
 }
 
 export interface SocialLink {
