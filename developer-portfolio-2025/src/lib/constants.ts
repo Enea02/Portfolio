@@ -107,7 +107,7 @@ export const FEATURED_PROJECTS: Project[] = [
       'home.projects.ticketManagement.highlight2'
     ],
     githubUrl: '',
-    demoUrl: '/presentations/ticket-management/presentation.pptx',
+    demoUrl: '/presentations/ticket-management/Frontera Enea Presentazione Laurea.pptx',
     featured: true,
     year: 2024,
   },

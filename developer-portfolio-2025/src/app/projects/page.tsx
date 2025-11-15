@@ -8,8 +8,10 @@ import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { FEATURED_PROJECTS } from '@/lib/constants';
 import type { Project } from '@/types';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsPage() {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const categories = [
@@ -108,6 +110,7 @@ export default function ProjectsPage() {
 
 // Project Card Component
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+  const { t } = useTranslation();
   return (
     <Card className="h-full flex flex-col hover-glow">
       {/* Project Header with Image */}
@@ -138,9 +141,9 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
       {/* Content */}
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
+        <CardTitle>{t(project.title)}</CardTitle>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
-          {project.longDescription}
+          {t(project.longDescription)}
         </p>
       </CardHeader>
 
@@ -162,7 +165,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           {project.highlights.map((highlight, idx) => (
             <p key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
               <span className="text-green-500 mr-2 mt-0.5">✓</span>
-              {highlight}
+              {t(highlight)}
             </p>
           ))}
         </div>
