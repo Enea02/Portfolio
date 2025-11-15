@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import profilePhoto from '@/image/IMG_6331.jpg';
 
 export const ProfilePhoto3D: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -92,14 +93,14 @@ export const ProfilePhoto3D: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-transparent to-secondary-500/20 z-10 pointer-events-none" />
 
             {/* Photo */}
-            <div className="relative w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800">
+            <div className="relative w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 overflow-hidden">
               <Image
-                src="/images/IMG_6321.jpg"
+                src={profilePhoto}
                 alt="Profile Photo"
                 fill
-                className="object-cover"
+                className="object-cover w-full h-full"
                 priority
-                sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+                quality={100}
               />
             </div>
 
