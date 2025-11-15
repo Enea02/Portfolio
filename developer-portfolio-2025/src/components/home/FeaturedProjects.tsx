@@ -67,9 +67,9 @@ export const FeaturedProjects: React.FC = () => {
                 </div>
 
                 <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
+                  <CardTitle>{t(project.title)}</CardTitle>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                    {project.description}
+                    {t(project.description)}
                   </p>
                 </CardHeader>
 
@@ -88,7 +88,7 @@ export const FeaturedProjects: React.FC = () => {
                     {project.highlights.slice(0, 2).map((highlight, idx) => (
                       <p key={idx} className="text-xs text-gray-600 dark:text-gray-400 flex items-center">
                         <span className="text-green-500 mr-2">✓</span>
-                        {highlight}
+                        {t(highlight)}
                       </p>
                     ))}
                   </div>

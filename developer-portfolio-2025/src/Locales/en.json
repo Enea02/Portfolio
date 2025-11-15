@@ -37,7 +37,7 @@
     "home": {
         "featuredProjectsTitle": "Featured",
         "featuredProjectsTitleHighlight": "Projects",
-        "featuredProjectsDescription": "A selection of my most significant projects demonstrating skills in AI, cloud and full-stack development",
+        "featuredProjectsDescription": "A curated selection of projects demonstrating full-stack, cloud and mobile work.",
         "viewAllProjects": "View all projects",
         "code": "Code",
         "demo": "Demo",
@@ -48,7 +48,27 @@
         "expert": "Expert",
         "advanced": "Advanced",
         "intermediate": "Intermediate",
-        "learning": "Learning"
+        "learning": "Learning",
+        "projects": {
+            "ticketManagement": {
+                "title": "BC Ticket Management (Thesis)",
+                "description": "Thesis project: synchronization and management of Freshdesk tickets inside Microsoft Dynamics 365 Business Central using Azure Functions, custom AL tables and an AI responder pipeline.",
+                "highlight1": "Thesis project: full integration Freshdesk ↔ Business Central.",
+                "highlight2": "Azure Functions (BlobTrigger), Ticket Response table, sync & audit logic."
+            },
+            "carRent": {
+                "title": "Car-Rent Platform",
+                "description": "Complete car rental platform with booking flows, fleet management, payment integration and admin dashboard. Ready to attach GitHub repository.",
+                "highlight1": "Booking and availability engine with payments (Stripe).",
+                "highlight2": "Admin panel, PostgreSQL persistence and Next.js frontend."
+            },
+            "smartParking": {
+                "title": "SmartParking (with Andrea Crevacore & Michele Filidoro)",
+                "description": "Smart parking solution with real-time occupancy, sensor integration and reservation API. Collaboration project with Andrea Crevacore and Michele Filidoro.",
+                "highlight1": "Realtime sensor ingestion (MQTT) and reservation API.",
+                "highlight2": "Mobile app + backend for reservations and monitoring."
+            }
+        }
     },
     "about": {
         "title": "About",
