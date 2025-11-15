@@ -24,10 +24,10 @@
     },
     "personal-info": {
         "name": "Enea Frontera",
-        "role": "Full-Stack Developer & AI Enthusiast",
-        "tagline": "Building modern solutions with AI, Cloud and DevOps",
-        "bio": "Full-stack developer with a strong focus on modern and AI-ready technologies. Experienced in Angular, TypeScript and Business Central, now specializing in cloud-native architectures, DevOps practices and AI/LLM integration.",
-        "email": "Enea.alice.it@gmail.com",
+        "role": "Computer Scientist — Software Analyst and Developer",
+        "tagline": "Building innovative solutions combining programming and electronic design",
+        "bio": "Computer Science undergraduate with a solid background in electronics and robotics. Passionate about technology, cars and motorsport, I develop innovative solutions combining programming and electronic design, with particular interest in automotive and racing applications.",
+        "email": "enea.alice.it@gmail.com",
         "location": "Novara, Italy",
         "availability": "Available for collaborations"
     },
@@ -74,14 +74,65 @@
         "title": "About",
         "titleHighlight": "Me",
         "whoAmI": "Who I am",
-        "paragraph1": "I'm a <strong>Full-Stack Developer</strong> passionate about innovative technologies, with a particular focus on <strong>Artificial Intelligence</strong>, <strong>Cloud Computing</strong> and <strong>DevOps practices</strong>. My experience ranges from frontend development with modern frameworks like React and Angular, to backend with Node.js, up to the integration of enterprise systems like Business Central.",
-        "paragraph2": "In recent years I have specialized in integrating <strong>Large Language Models (LLM)</strong> and AI technologies into business applications, creating solutions that automate complex processes and improve user experience. I strongly believe in the importance of writing clean, testable and maintainable code, following established best practices and design patterns.",
-        "paragraph3": "When I'm not coding, I enjoy staying up to date on the latest tech trends, contributing to open source projects and sharing knowledge through blog posts and mentoring.",
+        "paragraph1": "I'm a <strong>computer scientist</strong> undergraduate with a solid background in <strong>electronics and robotics</strong>. Passionate about technology, cars and motorsport, I focus on developing innovative solutions that combine <strong>programming</strong> and <strong>electronic design</strong>, with particular interest in <strong>automotive and racing</strong> applications.",
+        "paragraph2": "My experience ranges from developing <strong>web applications</strong> (Node.js, Flask, ASP.NET) to integrating <strong>enterprise systems</strong> like Business Central, from <strong>IoT</strong> and electronics (Arduino, PCB with KiCad) to <strong>software analysis and development</strong> with focus on automation and artificial intelligence. I have worked on projects including AI-powered ticket management, car rental platforms and smart parking solutions.",
+        "paragraph3": "I strongly believe in the importance of a solid methodological approach, using <strong>UML</strong> for requirements analysis, <strong>Git/GitHub</strong> for versioning and <strong>Agile</strong> methodologies for development. My soft skills include teamwork, problem solving, technical leadership and customer orientation, always with clear communication and adaptability.",
         "experienceTitle": "Professional",
         "experienceTitleHighlight": "Experience",
         "educationTitle": "Education",
         "certificationsTitle": "Certifications",
-        "keyAchievements": "Key Achievements:"
+        "keyAchievements": "Key Achievements:",
+        "experiences": {
+            "present": "Present",
+            "dsc": {
+                "role": "Software Analyst and Developer",
+                "description": "Software development and requirements analysis, implementation of integrated IT solutions with focus on Business Central, Freshdesk and Azure Functions. Design of AI pipelines and ticketing automation.",
+                "achievement1": "Development of integrated software solutions for business process automation",
+                "achievement2": "Implementation of advanced integrations with Business Central, Freshdesk and Azure Functions",
+                "achievement3": "Design of AI pipelines for intelligent ticket management"
+            },
+            "internship": {
+                "role": "University Internship (Thesis Project)",
+                "description": "Development of an Integrated System for Support Ticket Management and Automation using AI, Azure Functions, Business Central, AL and Freshdesk API.",
+                "achievement1": "Complete design and implementation of integrated ticketing system",
+                "achievement2": "AI integration for automatic response and ticket categorization",
+                "achievement3": "Bidirectional Freshdesk-Business Central synchronization via Azure Functions"
+            },
+            "chef": {
+                "role": "Kitchen Assistant",
+                "description": "Management of operational activities in catering with development of organizational skills, multitasking and attention to detail.",
+                "achievement1": "Development of organizational and time management skills in high-pressure environment",
+                "achievement2": "Effective teamwork and attention to detail in daily operations"
+            }
+        },
+        "education": {
+            "bachelor": {
+                "degree": "Bachelor's Degree in Computer Science",
+                "institution": "University of Eastern Piedmont (UPO), Vercelli",
+                "description": "Comprehensive training in software development, algorithms, databases, software architectures and development methodologies."
+            },
+            "diploma": {
+                "degree": "Diploma in Electronics and Electrical Engineering (Robotics)",
+                "institution": "ITI Omar, Novara",
+                "description": "Technical training in electronics, robotics, PCB design, Arduino, LabVIEW and embedded systems."
+            }
+        },
+        "certifications": {
+            "ecdl": {
+                "issuer": "ECDL Foundation"
+            },
+            "driverLicense": {
+                "name": "Driver's License (B)",
+                "issuer": "Italian Motor Vehicle Department"
+            },
+            "safety": {
+                "name": "Workplace Safety",
+                "issuer": "Mandatory Training"
+            },
+            "haccp": {
+                "issuer": "HACCP Certification"
+            }
+        }
     },
     "contact": {
         "title": "Get in",
