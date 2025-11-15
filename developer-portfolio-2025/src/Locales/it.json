@@ -24,10 +24,10 @@
     },
     "personal-info":{
         "name": "Enea Frontera",
-        "role": "Full-Stack Developer & AI Enthusiast",
-        "tagline": "Costruisco soluzioni moderne con AI, Cloud e DevOps",
-        "bio": "Sviluppatore full-stack con forte focus su tecnologie moderne e AI-ready.Esperienza in Angular, TypeScript e Business Central, ora specializzato in architetture cloud-native, pratiche DevOps e integrazione di AI/LLM.",
-        "email": "Enea.alice.it@gmail.com",
+        "role": "Informatico — Analista e Sviluppatore Software",
+        "tagline": "Costruisco soluzioni innovative combinando programmazione e progettazione elettronica",
+        "bio": "Laureando in Informatica con una solida formazione in elettronica e robotica. Appassionato di tecnologia, auto e motorsport, sviluppo soluzioni innovative combinando programmazione e progettazione elettronica, con particolare interesse verso applicazioni automotive e racing.",
+        "email": "enea.alice.it@gmail.com",
         "location": "Novara, Italia",
         "availability": "Disponibile per collaborazioni"
     },
@@ -74,14 +74,65 @@
         "title": "About",
         "titleHighlight": "Me",
         "whoAmI": "Chi sono",
-        "paragraph1": "Sono un <strong>Full-Stack Developer</strong> appassionato di tecnologie innovative, con particolare focus su <strong>Intelligenza Artificiale</strong>, <strong>Cloud Computing</strong> e <strong>pratiche DevOps</strong>. La mia esperienza spazia dallo sviluppo frontend con framework moderni come React e Angular, al backend con Node.js, fino all'integrazione di sistemi enterprise come Business Central.",
-        "paragraph2": "Negli ultimi anni mi sono specializzato nell'integrazione di <strong>Large Language Models (LLM)</strong> e tecnologie AI nelle applicazioni business, creando soluzioni che automatizzano processi complessi e migliorano l'esperienza utente. Credo fortemente nell'importanza di scrivere codice pulito, testabile e manutenibile, seguendo best practices e design patterns consolidati.",
-        "paragraph3": "Quando non programmo, mi piace rimanere aggiornato sulle ultime tendenze tech, contribuire a progetti open source e condividere conoscenze attraverso blog posts e mentoring.",
+        "paragraph1": "Sono un <strong>informatico</strong> laureando con una solida formazione in <strong>elettronica e robotica</strong>. Appassionato di tecnologia, auto e motorsport, mi dedico allo sviluppo di soluzioni innovative che combinano <strong>programmazione</strong> e <strong>progettazione elettronica</strong>, con particolare interesse verso applicazioni <strong>automotive e racing</strong>.",
+        "paragraph2": "La mia esperienza spazia dallo sviluppo di <strong>applicazioni web</strong> (Node.js, Flask, ASP.NET) all'integrazione di <strong>sistemi enterprise</strong> come Business Central, dall'<strong>IoT</strong> e l'elettronica (Arduino, PCB con KiCad) fino all'<strong>analisi e sviluppo software</strong> con focus su automazione e intelligenza artificiale. Ho lavorato su progetti che includono la gestione di ticket con AI, piattaforme di noleggio auto e soluzioni smart parking.",
+        "paragraph3": "Credo fortemente nell'importanza di un approccio metodologico solido, utilizzando <strong>UML</strong> per l'analisi dei requisiti, <strong>Git/GitHub</strong> per il versioning e metodologie <strong>Agile</strong> per lo sviluppo. Le mie soft skills includono teamwork, problem solving, leadership tecnica e orientamento al cliente, sempre con comunicazione chiara e capacità di adattamento.",
         "experienceTitle": "Esperienza",
         "experienceTitleHighlight": "Professionale",
         "educationTitle": "Formazione",
         "certificationsTitle": "Certificazioni",
-        "keyAchievements": "Key Achievements:"
+        "keyAchievements": "Risultati chiave:",
+        "experiences": {
+            "present": "Presente",
+            "dsc": {
+                "role": "Analista e Sviluppatore Software",
+                "description": "Sviluppo software e analisi requisiti, implementazione di soluzioni IT integrate con focus su Business Central, Freshdesk e Azure Functions. Progettazione di pipeline AI e automazione del ticketing.",
+                "achievement1": "Sviluppo di soluzioni software integrate per automazione processi aziendali",
+                "achievement2": "Implementazione di integrazioni avanzate con Business Central, Freshdesk e Azure Functions",
+                "achievement3": "Progettazione di pipeline AI per gestione intelligente dei ticket"
+            },
+            "internship": {
+                "role": "Stage Universitario (Progetto di Tesi)",
+                "description": "Sviluppo di un Sistema Integrato per la Gestione e l'Automazione dei Ticket di Assistenza sfruttando IA, Azure Functions, Business Central, AL e Freshdesk API.",
+                "achievement1": "Progettazione e implementazione completa del sistema di ticketing integrato",
+                "achievement2": "Integrazione di AI per risposta automatica e categorizzazione ticket",
+                "achievement3": "Sincronizzazione bidirezionale Freshdesk-Business Central tramite Azure Functions"
+            },
+            "chef": {
+                "role": "Aiuto Cuoco",
+                "description": "Gestione attività operative in ambito ristorazione con sviluppo di capacità organizzative, multitasking e attenzione ai dettagli.",
+                "achievement1": "Sviluppo capacità organizzative e gestione del tempo in ambiente ad alta pressione",
+                "achievement2": "Teamwork efficace e attenzione ai dettagli nelle operazioni quotidiane"
+            }
+        },
+        "education": {
+            "bachelor": {
+                "degree": "Laurea Triennale in Informatica",
+                "institution": "Università del Piemonte Orientale (UPO), Vercelli",
+                "description": "Formazione completa in sviluppo software, algoritmi, database, architetture software e metodologie di sviluppo."
+            },
+            "diploma": {
+                "degree": "Diploma Perito Elettronico ed Elettrotecnico (Robotica)",
+                "institution": "ITI Omar, Novara",
+                "description": "Formazione tecnica in elettronica, robotica, progettazione PCB, Arduino, LabVIEW e sistemi embedded."
+            }
+        },
+        "certifications": {
+            "ecdl": {
+                "issuer": "ECDL Foundation"
+            },
+            "driverLicense": {
+                "name": "Patente B",
+                "issuer": "Motorizzazione Civile"
+            },
+            "safety": {
+                "name": "Sicurezza sul Lavoro",
+                "issuer": "Formazione Obbligatoria"
+            },
+            "haccp": {
+                "issuer": "Certificazione HACCP"
+            }
+        }
     },
     "contact": {
         "title": "Mettiamoci in",

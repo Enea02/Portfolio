@@ -13,28 +13,40 @@ export default function AboutPage() {
   const experiences = [
     {
       icon: <Briefcase className="h-5 w-5" />,
-      company: 'La tua azienda attuale',
-      role: 'Senior Full-Stack Developer',
-      period: '2023 - Presente',
-      description: 'Sviluppo di applicazioni enterprise con focus su AI integration, cloud architecture e DevOps practices.',
-      technologies: ['React', 'Node.js', 'AWS', 'OpenAI API', 'Docker'],
+      company: 'DSC Group',
+      role: t('about.experiences.dsc.role'),
+      period: '2025 - ' + t('about.experiences.present'),
+      description: t('about.experiences.dsc.description'),
+      technologies: ['Business Central', 'AL', 'Azure Functions', 'Freshdesk API', 'C#'],
       achievements: [
-        'Implementato sistema di AI chatbot che ha ridotto i ticket di supporto del 40%',
-        'Migrato infrastruttura legacy su architettura cloud-native (AWS)',
-        'Mentoring di 3 junior developers'
+        t('about.experiences.dsc.achievement1'),
+        t('about.experiences.dsc.achievement2'),
+        t('about.experiences.dsc.achievement3')
       ]
     },
     {
       icon: <Code2 className="h-5 w-5" />,
-      company: 'Azienda precedente',
-      role: 'Full-Stack Developer',
-      period: '2021 - 2023',
-      description: 'Sviluppo di soluzioni ERP personalizzate con Business Central/AL e applicazioni web moderne.',
-      technologies: ['Angular', 'TypeScript', 'Business Central', 'Azure', 'Ionic'],
+      company: 'DSC Group',
+      role: t('about.experiences.internship.role'),
+      period: '2025',
+      description: t('about.experiences.internship.description'),
+      technologies: ['Business Central', 'AL', 'Azure Functions', 'Freshdesk API', 'AI Integration'],
       achievements: [
-        'Sviluppato 15+ estensioni Business Central per automazione processi',
-        'Creato app mobile cross-platform per gestione magazzino',
-        'Ottimizzato performance applicazioni del 60%'
+        t('about.experiences.internship.achievement1'),
+        t('about.experiences.internship.achievement2'),
+        t('about.experiences.internship.achievement3')
+      ]
+    },
+    {
+      icon: <Briefcase className="h-5 w-5" />,
+      company: 'Chef Express',
+      role: t('about.experiences.chef.role'),
+      period: '2022 - 2023',
+      description: t('about.experiences.chef.description'),
+      technologies: [],
+      achievements: [
+        t('about.experiences.chef.achievement1'),
+        t('about.experiences.chef.achievement2')
       ]
     }
   ];
@@ -42,25 +54,44 @@ export default function AboutPage() {
   const education = [
     {
       icon: <GraduationCap className="h-5 w-5" />,
-      degree: 'Laurea in Informatica / Ingegneria del Software',
-      institution: 'Università / Istituto',
-      period: '2017 - 2021',
-      description: 'Focus su sviluppo software, algoritmi, database e architetture distribuite'
+      degree: t('about.education.bachelor.degree'),
+      institution: t('about.education.bachelor.institution'),
+      period: '2021 - 2025',
+      description: t('about.education.bachelor.description')
+    },
+    {
+      icon: <GraduationCap className="h-5 w-5" />,
+      degree: t('about.education.diploma.degree'),
+      institution: t('about.education.diploma.institution'),
+      period: '2016 - 2021',
+      description: t('about.education.diploma.description')
     }
   ];
 
   const certifications = [
     {
       icon: <Award className="h-5 w-5" />,
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      year: '2024'
+      name: 'ECDL',
+      issuer: t('about.certifications.ecdl.issuer'),
+      year: ''
     },
     {
       icon: <Award className="h-5 w-5" />,
-      name: 'Microsoft Certified: Azure Developer',
-      issuer: 'Microsoft',
-      year: '2023'
+      name: t('about.certifications.driverLicense.name'),
+      issuer: t('about.certifications.driverLicense.issuer'),
+      year: ''
+    },
+    {
+      icon: <Award className="h-5 w-5" />,
+      name: t('about.certifications.safety.name'),
+      issuer: t('about.certifications.safety.issuer'),
+      year: ''
+    },
+    {
+      icon: <Award className="h-5 w-5" />,
+      name: 'HACCP',
+      issuer: t('about.certifications.haccp.issuer'),
+      year: ''
     }
   ];
 

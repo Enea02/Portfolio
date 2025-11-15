@@ -17,7 +17,7 @@ export const PERSONAL_INFO = {
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: 'github',
-    url: 'https://github.com/tuousername',
+    url: 'https://github.com/EneaFro',
     icon: 'Github',
   },
   {
@@ -26,13 +26,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: 'Linkedin',
   },
   {
-    platform: 'twitter',
-    url: 'https://twitter.com/tuousername',
-    icon: 'Twitter',
-  },
-  {
     platform: 'email',
-    url: 'mailto:Enea.alice.it@gmail.com',
+    url: 'mailto:enea.alice.it@gmail.com',
     icon: 'Mail',
   },
 ];
@@ -40,47 +35,53 @@ export const SOCIAL_LINKS: SocialLink[] = [
 // Tech Stack - Organized by category
 export const TECH_STACK: TechStack[] = [
   {
-    category: 'Frontend',
+    category: 'Programming',
     technologies: [
-      { name: 'React', proficiency: 'advanced', yearsOfExperience: 3 },
-      { name: 'Next.js', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'TypeScript', proficiency: 'expert', yearsOfExperience: 4 },
-      { name: 'Angular', proficiency: 'advanced', yearsOfExperience: 3 },
-      { name: 'Ionic', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'TailwindCSS', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'C#', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'JavaScript', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'Python', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'Java', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'C', proficiency: 'intermediate', yearsOfExperience: 3 },
     ],
   },
   {
-    category: 'Backend',
+    category: 'Web Development',
     technologies: [
-      { name: 'Node.js', proficiency: 'advanced', yearsOfExperience: 3 },
-      { name: 'Express', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'Business Central/AL', proficiency: 'expert', yearsOfExperience: 3 },
-      { name: 'PostgreSQL', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'HTML/CSS', proficiency: 'advanced', yearsOfExperience: 3 },
+      { name: 'Node.js', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'ASP.NET', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Flask', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
   {
-    category: 'Cloud',
+    category: 'Database',
     technologies: [
-      { name: 'AWS', proficiency: 'intermediate', yearsOfExperience: 1 },
-      { name: 'Vercel', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'Azure', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'MySQL', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'SQLite', proficiency: 'intermediate', yearsOfExperience: 2 },
     ],
   },
   {
-    category: 'DevOps',
+    category: 'Cloud & Enterprise',
     technologies: [
-      { name: 'Docker', proficiency: 'intermediate', yearsOfExperience: 2 },
-      { name: 'GitHub Actions', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'CI/CD', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'Business Central/AL', proficiency: 'advanced', yearsOfExperience: 1 },
+      { name: 'Azure Functions', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Freshdesk API', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
   {
-    category: 'AI/ML',
+    category: 'IoT & Electronics',
     technologies: [
-      { name: 'OpenAI API', proficiency: 'intermediate', yearsOfExperience: 1 },
-      { name: 'LangChain', proficiency: 'learning' },
-      { name: 'Prompt Engineering', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Arduino', proficiency: 'advanced', yearsOfExperience: 4 },
+      { name: 'KiCad (PCB Design)', proficiency: 'intermediate', yearsOfExperience: 3 },
+      { name: 'LabVIEW', proficiency: 'intermediate', yearsOfExperience: 2 },
+    ],
+  },
+  {
+    category: 'Tools & Methodologies',
+    technologies: [
+      { name: 'Git/GitHub', proficiency: 'advanced', yearsOfExperience: 3 },
+      { name: 'UML', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'Agile', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
 ];
