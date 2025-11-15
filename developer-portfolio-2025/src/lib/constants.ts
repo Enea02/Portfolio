@@ -88,59 +88,71 @@ export const TECH_STACK: TechStack[] = [
 // Featured Projects - CUSTOMIZE THESE!
 export const FEATURED_PROJECTS: Project[] = [
   {
-    id: 'ai-chatbot',
-    title: 'AI Assistant Platform',
-    description: 'Piattaforma conversazionale con integrazione GPT-4 per automazione customer support',
-    longDescription: `Sistema completo di chatbot AI con interfaccia React, backend Node.js e integrazione 
-                      con OpenAI API. Include gestione conversazioni, memory persistente e analytics in tempo reale.`,
-    tags: ['React', 'Node.js', 'OpenAI', 'TypeScript', 'Tailwind'],
-    imageUrl: '/images/projects/ai-chatbot.jpg',
-    githubUrl: 'https://github.com/tuousername/ai-assistant',
-    demoUrl: 'https://ai-assistant-demo.vercel.app',
-    featured: true,
-    category: 'ai',
-    year: 2024,
-    highlights: [
-      'Riduzione 40% ticket support',
-      'Tempo risposta < 2 secondi',
-      '95% customer satisfaction',
-    ],
-  },
-  {
-    id: 'business-central-integration',
-    title: 'ERP Integration Suite',
-    description: 'Suite di estensioni Business Central/AL per automazione processi aziendali',
-    longDescription: `Pacchetto di moduli personalizzati per Business Central che automatizzano workflow 
-                      complessi, integrano API esterne e forniscono dashboard analitiche avanzate.`,
-    tags: ['Business Central', 'AL', 'Azure', 'API Integration'],
-    imageUrl: '/images/projects/erp-suite.jpg',
-    githubUrl: 'https://github.com/tuousername/bc-extensions',
-    featured: true,
+    id: 'bc-ticket-management',
+    title: 'home.projects.ticketManagement.title',
+    description: 'home.projects.ticketManagement.description',
+    longDescription: 'home.projects.ticketManagement.description',
     category: 'fullstack',
-    year: 2023,
-    highlights: [
-      'Automazione 80% processi manuali',
-      'Integrazione 15+ API esterne',
-      'Deployment su 50+ clienti',
+    tags: [
+      'Business Central',
+      'Freshdesk',
+      'Azure Functions',
+      'AL',
+      'C#',
+      'PowerPoint (demo)'
     ],
+    highlights: [
+      'home.projects.ticketManagement.highlight1',
+      'home.projects.ticketManagement.highlight2'
+    ],
+    githubUrl: '',
+    demoUrl: '/presentations/ticket-management/presentation.pptx',
+    featured: true,
+    year: 2024,
   },
   {
-    id: 'cloud-monitoring',
-    title: 'Cloud Infrastructure Monitor',
-    description: 'Dashboard real-time per monitoraggio infrastrutture cloud multi-provider',
-    longDescription: `Applicazione Next.js con backend serverless che aggrega metriche da AWS, Azure e GCP. 
-                      Include alerting intelligente, cost optimization e performance insights.`,
-    tags: ['Next.js', 'AWS', 'Azure', 'Serverless', 'Charts'],
-    imageUrl: '/images/projects/cloud-monitor.jpg',
-    demoUrl: 'https://cloud-monitor-demo.vercel.app',
-    featured: true,
-    category: 'cloud',
-    year: 2024,
-    highlights: [
-      'Supporto multi-cloud',
-      'Alerting predittivo con ML',
-      'Riduzione costi 25%',
+    id: 'car-rent',
+    title: 'home.projects.carRent.title',
+    description: 'home.projects.carRent.description',
+    longDescription: 'home.projects.carRent.description',
+    category: 'web',
+    tags: [
+      'Next.js',
+      'Tailwind',
+      'PostgreSQL',
+      'Stripe',
+      'TypeScript'
     ],
+    highlights: [
+      'home.projects.carRent.highlight1',
+      'home.projects.carRent.highlight2'
+    ],
+    githubUrl: '',
+    demoUrl: '',
+    featured: true,
+    year: 2024,
+  },
+  {
+    id: 'smart-parking',
+    title: 'home.projects.smartParking.title',
+    description: 'home.projects.smartParking.description',
+    longDescription: 'home.projects.smartParking.description',
+    category: 'mobile',
+    tags: [
+      'Node.js',
+      'MQTT',
+      'React Native / Flutter',
+      'PostgreSQL',
+      'Realtime'
+    ],
+    highlights: [
+      'home.projects.smartParking.highlight1',
+      'home.projects.smartParking.highlight2'
+    ],
+    githubUrl: '',
+    demoUrl: '',
+    featured: true,
+    year: 2024,
   },
 ];
 

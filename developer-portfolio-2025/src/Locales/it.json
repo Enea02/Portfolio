@@ -37,9 +37,9 @@
     "home": {
         "featuredProjectsTitle": "Progetti in",
         "featuredProjectsTitleHighlight": "Evidenza",
-        "featuredProjectsDescription": "Una selezione dei miei progetti più significativi che dimostrano competenze in AI, cloud e sviluppo full-stack",
+        "featuredProjectsDescription": "Una selezione di progetti che mostrano lavoro full-stack, cloud e mobile.",
         "viewAllProjects": "Vedi tutti i progetti",
-        "code": "Code",
+        "code": "Codice",
         "demo": "Demo",
         "techStackTitle": "Tech Stack 2025",
         "techStackDescription": "Tecnologie moderne con cui costruisco soluzioni scalabili, performanti e innovative",
@@ -48,7 +48,27 @@
         "expert": "Esperto",
         "advanced": "Avanzato",
         "intermediate": "Intermedio",
-        "learning": "In apprendimento"
+        "learning": "In apprendimento",
+        "projects": {
+            "ticketManagement": {
+                "title": "Gestione Ticket BC (Tesi)",
+                "description": "Progetto di tesi: sincronizzazione e gestione dei ticket Freshdesk all'interno di Microsoft Dynamics 365 Business Central tramite Azure Functions, tabelle AL personalizzate e pipeline AI.",
+                "highlight1": "Progetto di tesi: integrazione completa Freshdesk ↔ Business Central.",
+                "highlight2": "Azure Functions (BlobTrigger), tabella Ticket Response, logiche di sync e audit."
+            },
+            "carRent": {
+                "title": "Piattaforma Car-Rent",
+                "description": "Piattaforma completa per il noleggio auto con flussi di prenotazione, gestione flotta, integrazione pagamenti e dashboard amministrativa. Pronta per ricevere il repository GitHub.",
+                "highlight1": "Motore di prenotazione e disponibilità con pagamenti (Stripe).",
+                "highlight2": "Pannello admin, persistenza PostgreSQL e frontend Next.js."
+            },
+            "smartParking": {
+                "title": "SmartParking (con Andrea Crevacore & Michele Filidoro)",
+                "description": "Soluzione smart parking con occupazione in tempo reale, integrazione sensori e API di prenotazione. Progetto in collaborazione con Andrea Crevacore e Michele Filidoro.",
+                "highlight1": "Ingestione sensori realtime (MQTT) e API di prenotazione.",
+                "highlight2": "App mobile + backend per prenotazioni e monitoraggio."
+            }
+        }
     },
     "about": {
         "title": "About",

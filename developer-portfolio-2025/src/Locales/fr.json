@@ -37,7 +37,7 @@
     "home": {
         "featuredProjectsTitle": "Projets",
         "featuredProjectsTitleHighlight": "en vedette",
-        "featuredProjectsDescription": "Une sélection de mes projets les plus significatifs démontrant des compétences en IA, cloud et développement full-stack",
+        "featuredProjectsDescription": "Une sélection de projets démontrant un travail full-stack, cloud et mobile.",
         "viewAllProjects": "Voir tous les projets",
         "code": "Code",
         "demo": "Démo",
@@ -48,7 +48,27 @@
         "expert": "Expert",
         "advanced": "Avancé",
         "intermediate": "Intermédiaire",
-        "learning": "En apprentissage"
+        "learning": "En apprentissage",
+        "projects": {
+            "ticketManagement": {
+                "title": "Gestion Tickets BC (Thèse)",
+                "description": "Projet de thèse: synchronisation et gestion des tickets Freshdesk dans Microsoft Dynamics 365 Business Central via Azure Functions, tables AL personnalisées et pipeline IA.",
+                "highlight1": "Projet de thèse: intégration complète Freshdesk ↔ Business Central.",
+                "highlight2": "Azure Functions (BlobTrigger), table Ticket Response, logique sync & audit."
+            },
+            "carRent": {
+                "title": "Plateforme Car-Rent",
+                "description": "Plateforme complète de location de voitures avec flux de réservation, gestion de flotte, intégration de paiement et tableau de bord administrateur. Prête à recevoir le dépôt GitHub.",
+                "highlight1": "Moteur de réservation et disponibilité avec paiements (Stripe).",
+                "highlight2": "Panneau admin, persistance PostgreSQL et frontend Next.js."
+            },
+            "smartParking": {
+                "title": "SmartParking (avec Andrea Crevacore & Michele Filidoro)",
+                "description": "Solution de stationnement intelligent avec occupation en temps réel, intégration de capteurs et API de réservation. Projet en collaboration avec Andrea Crevacore et Michele Filidoro.",
+                "highlight1": "Ingestion de capteurs en temps réel (MQTT) et API de réservation.",
+                "highlight2": "Application mobile + backend pour réservations et surveillance."
+            }
+        }
     },
     "about": {
         "title": "À propos",
