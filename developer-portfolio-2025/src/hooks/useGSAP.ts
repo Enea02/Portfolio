@@ -26,8 +26,8 @@ export const useGSAP = (
   const { scope, dependencies = [], revertOnUpdate = true } = options;
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      callback(ctx);
+    const ctx = gsap.context((contextFromGSAP) => {
+      callback(contextFromGSAP);
     }, scope?.current || undefined);
 
     return () => {
