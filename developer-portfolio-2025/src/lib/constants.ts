@@ -1,4 +1,4 @@
-import { Project, TechStack, SocialLink } from '@/types';
+import { Project, TechStack, SocialLink } from '@/types'; 
 import { useTranslation } from 'react-i18next';
 
 // Personal Information - CUSTOMIZE THIS!
