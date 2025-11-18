@@ -39,9 +39,11 @@ export const TECH_STACK: TechStack[] = [
     technologies: [
       { name: 'C#', proficiency: 'advanced', yearsOfExperience: 2 },
       { name: 'JavaScript', proficiency: 'advanced', yearsOfExperience: 2 },
-      { name: 'Python', proficiency: 'intermediate', yearsOfExperience: 2 },
+      { name: 'Python', proficiency: 'intermediate', yearsOfExperience: 1 },
       { name: 'Java', proficiency: 'intermediate', yearsOfExperience: 2 },
       { name: 'C', proficiency: 'intermediate', yearsOfExperience: 3 },
+      { name: 'TypeScript', proficiency: 'intermediate', yearsOfExperience: 0.5 },
+      { name: 'AL', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
   {
@@ -50,7 +52,8 @@ export const TECH_STACK: TechStack[] = [
       { name: 'HTML/CSS', proficiency: 'advanced', yearsOfExperience: 3 },
       { name: 'Node.js', proficiency: 'advanced', yearsOfExperience: 2 },
       { name: 'ASP.NET', proficiency: 'intermediate', yearsOfExperience: 1 },
-      { name: 'Flask', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Bootstrap', proficiency: 'intermediate', yearsOfExperience: 1 },
+      
     ],
   },
   {
@@ -63,9 +66,10 @@ export const TECH_STACK: TechStack[] = [
   {
     category: 'Cloud & Enterprise',
     technologies: [
-      { name: 'Business Central/AL', proficiency: 'advanced', yearsOfExperience: 1 },
-      { name: 'Azure Functions', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Business Central/AL', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Azure', proficiency: 'intermediate', yearsOfExperience: 1 },
       { name: 'Freshdesk API', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Dynamics NAV', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
   {
@@ -110,6 +114,7 @@ export const FEATURED_PROJECTS: Project[] = [
     demoUrl: '/presentations/ticket-management/Frontera Enea Presentazione Laurea.pptx',
     featured: true,
     year: 2024,
+    imageUrl: '/images/projects/bc-ticket-management.png',
   },
   {
     id: 'car-rent',
@@ -132,6 +137,7 @@ export const FEATURED_PROJECTS: Project[] = [
     demoUrl: '',
     featured: true,
     year: 2024,
+    imageUrl: '/images/projects/car-rent.png',
   },
   {
     id: 'smart-parking',
@@ -154,6 +160,7 @@ export const FEATURED_PROJECTS: Project[] = [
     demoUrl: '',
     featured: true,
     year: 2024,
+    imageUrl: '/images/projects/smart-parking.png',
   },
 ];
 

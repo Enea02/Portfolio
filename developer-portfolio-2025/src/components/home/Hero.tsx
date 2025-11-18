@@ -18,8 +18,8 @@ export const Hero: React.FC = () => {
   const nameRef = useRef(null);
   const roleRef = useRef(null);
   const taglineRef = useRef(null);
-  const ctaRef = useRef(null);
-  const socialsRef = useRef(null);
+  const ctaRef = useRef<HTMLDivElement | null>(null);
+  const socialsRef = useRef<HTMLDivElement | null>(null);
   const blob1Ref = useRef(null);
   const blob2Ref = useRef(null);
   const photoRef = useRef(null);
@@ -133,10 +133,11 @@ export const Hero: React.FC = () => {
           });
         });
 
-        button.addEventListener('mousemove', function(this: HTMLElement, e: MouseEvent) {
+        button.addEventListener('mousemove', function(this: HTMLElement, e: Event) {
+          const mouseEvent = e as MouseEvent;
           const rect = this.getBoundingClientRect();
-          const x = e.clientX - rect.left - rect.width / 2;
-          const y = e.clientY - rect.top - rect.height / 2;
+          const x = mouseEvent.clientX - rect.left - rect.width / 2;
+          const y = mouseEvent.clientY - rect.top - rect.height / 2;
 
           gsap.to(this, {
             x: x * 0.2,

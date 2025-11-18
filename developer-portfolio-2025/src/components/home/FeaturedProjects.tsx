@@ -17,8 +17,8 @@ export const FeaturedProjects: React.FC = () => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const descriptionRef = useRef(null);
-  const gridRef = useRef(null);
-  const buttonRef = useRef(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   // GSAP ScrollTrigger animations
   useGSAP(
@@ -153,10 +153,11 @@ export const FeaturedProjects: React.FC = () => {
         });
 
         // 3D tilt effect on mouse move
-        card.addEventListener('mousemove', function(this: HTMLElement, e: MouseEvent) {
+        card.addEventListener('mousemove', function(this: HTMLElement, e: Event) {
+          const event = e as MouseEvent;
           const rect = this.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
           const centerX = rect.width / 2;
           const centerY = rect.height / 2;
           const rotateX = ((y - centerY) / centerY) * -5;

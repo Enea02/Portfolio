@@ -16,7 +16,7 @@ export interface Project {
 }
 
 export interface TechStack {
-  category: 'Frontend' | 'Backend' | 'DevOps' | 'AI/ML' | 'Cloud' | 'Database';
+  category: 'Programming' | 'Web Development' | 'Database' | 'Cloud & Enterprise' | 'IoT & Electronics' | 'Tools & Methodologies';
   technologies: Technology[];
 }
 

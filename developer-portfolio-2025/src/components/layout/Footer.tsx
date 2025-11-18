@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '@/image/Logo.png';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { SOCIAL_LINKS, PERSONAL_INFO } from '@/lib/constants';
 import { useTranslation } from 'react-i18next'; // ✅ aggiunto
@@ -23,16 +25,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">D</span>
+            <Link href="/" className="flex items-center mb-4">
+              <div className="h-12 w-auto rounded-lg overflow-hidden flex items-center justify-center">
+                <Image src={logo} alt="Logo" height={48} width={200} className="object-contain" priority />
               </div>
-              <span className="font-bold text-xl gradient-text">
-                Dev Portfolio
-              </span>
-            </div>
+            </Link>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              {PERSONAL_INFO.tagline}
+              {t('personal-info.tagline')}
             </p>
           </div>
 
@@ -77,7 +76,7 @@ export const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-dark-border">
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
-            © {currentYear} {PERSONAL_INFO.name}. {t('footer.rights')}
+            © {currentYear} {t('personal-info.name')}. {t('footer.rights')}
           </p>
         </div>
       </div>

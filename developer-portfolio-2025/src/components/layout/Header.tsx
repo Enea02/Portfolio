@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '@/image/Logo.png';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
@@ -23,13 +25,10 @@ export const Header: React.FC = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">D</span>
+          <Link href="/" className="flex items-center">
+            <div className="h-12 w-auto rounded-lg overflow-hidden flex items-center justify-center">
+              <Image src={logo} alt="Logo" height={48} width={200} className="object-contain" priority />
             </div>
-            <span className="font-bold text-xl gradient-text hidden sm:inline-block">
-              Dev Portfolio
-            </span>
           </Link>
           
           {/* Desktop Navigation */}

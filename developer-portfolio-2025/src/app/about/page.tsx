@@ -108,7 +108,7 @@ export default function AboutPage() {
             {t('about.title')} <span className="gradient-text">{t('about.titleHighlight')}</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            {PERSONAL_INFO.bio}
+            {t('personal-info.bio')}
           </p>
         </motion.div>
 

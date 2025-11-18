@@ -12,11 +12,11 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export const TechStack: React.FC = () => {
   const { t } = useTranslation();
-  const sectionRef = useRef(null);
-  const titleRef = useRef(null);
-  const descriptionRef = useRef(null);
-  const gridRef = useRef(null);
-  const legendRef = useRef(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
+  const descriptionRef = useRef<HTMLParagraphElement | null>(null);
+  const gridRef = useRef<HTMLDivElement | null>(null);
+  const legendRef = useRef<HTMLDivElement | null>(null);
 
   // GSAP ScrollTrigger animations
   useGSAP(
@@ -164,12 +164,12 @@ export const TechStack: React.FC = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <span className="text-2xl">
-                      {stack.category === 'Frontend' && '⚛️'}
-                      {stack.category === 'Backend' && '⚙️'}
-                      {stack.category === 'Cloud' && '☁️'}
-                      {stack.category === 'DevOps' && '🚀'}
-                      {stack.category === 'AI/ML' && '🤖'}
+                      {stack.category === 'Programming' && '💻'}
+                      {stack.category === 'Web Development' && '🌐'}
                       {stack.category === 'Database' && '💾'}
+                      {stack.category === 'Cloud & Enterprise' && '☁️'}
+                      {stack.category === 'IoT & Electronics' && '⚡'}
+                      {stack.category === 'Tools & Methodologies' && '🛠️'}
                     </span>
                     {stack.category}
                   </CardTitle>
