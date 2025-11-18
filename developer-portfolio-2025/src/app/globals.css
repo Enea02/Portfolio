@@ -96,6 +96,33 @@
   ::selection {
     @apply bg-primary-500 text-white;
   }
+
+  /* GSAP Animations Support */
+  .gsap-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .gsap-3d-child {
+    transform-style: preserve-3d;
+  }
+
+  /* Smooth hardware acceleration */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-opacity {
+    will-change: opacity;
+  }
+
+  /* Page transition overlay */
+  .page-transition-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+  }
 }
 
 @layer utilities {
