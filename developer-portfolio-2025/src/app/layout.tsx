@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import { Providers } from '@/components/Providers';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { PageTransition } from '@/components/layout/PageTransition';
+import { SmoothScroll } from '@/components/layout/SmoothScroll';
 import '../app/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -30,13 +32,17 @@ export default function RootLayout({
     <html lang="it" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </div>
+          <SmoothScroll>
+            <PageTransition>
+              <div className="flex flex-col min-h-screen">
+                <Header />
+                <main className="flex-1">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+            </PageTransition>
+          </SmoothScroll>
         </Providers>
       </body>
     </html>
