@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { PageTransition } from '@/components/layout/PageTransition';
 import { SmoothScroll } from '@/components/layout/SmoothScroll';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../app/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -47,6 +48,7 @@ export default function RootLayout({
         </Providers>
       </body>
       <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
