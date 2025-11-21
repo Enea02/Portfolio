@@ -7,6 +7,7 @@ import logo from '@/image/Logo.png';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { SOCIAL_LINKS, PERSONAL_INFO } from '@/lib/constants';
 import { useTranslation } from 'react-i18next'; // ✅ aggiunto
+import { Analytics } from "@vercel/analytics/next"
 
 const iconMap = {
   Github,
