@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
@@ -13,10 +13,11 @@ export function ChatBot() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [userHasScrolled, setUserHasScrolled] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const messagesContainerRef = useRef<HTMLDivElement | null>(null);
+  // Use ref instead of state for immediate synchronous updates during streaming
+  const userHasScrolledRef = useRef(false);
 
   // Check if user is near the bottom of the chat
   const isNearBottom = useCallback(() => {
@@ -28,31 +29,27 @@ export function ChatBot() {
 
   const scrollToBottom = useCallback(() => {
     // Only auto-scroll if user hasn't scrolled up manually
-    if (!userHasScrolled || isNearBottom()) {
+    // Using ref for immediate check without React state delay
+    if (!userHasScrolledRef.current) {
       messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [userHasScrolled, isNearBottom]);
+  }, []);
 
   // Handle user scroll - detect if they scrolled up
   const handleScroll = useCallback(() => {
+    // User scrolled up - stop auto-scroll
     if (!isNearBottom()) {
-      setUserHasScrolled(true);
+      userHasScrolledRef.current = true;
     } else {
-      setUserHasScrolled(false);
+      // User is at bottom - re-enable auto-scroll
+      userHasScrolledRef.current = false;
     }
   }, [isNearBottom]);
 
-  // Only scroll to bottom when a NEW user message is added (not on initial load)
-  useEffect(() => {
-    if (messages.length > 0) {
-      const lastMessage = messages[messages.length - 1];
-      // Reset userHasScrolled when user sends a new message
-      if (lastMessage.role === 'user') {
-        setUserHasScrolled(false);
-        scrollToBottom();
-      }
-    }
-  }, [messages, scrollToBottom]);
+  // Reset scroll state when user sends a new message
+  const resetScrollState = useCallback(() => {
+    userHasScrolledRef.current = false;
+  }, []);
 
   const suggestedQuestions = [
     'Quali sono le tue competenze principali?',
@@ -67,9 +64,16 @@ export function ChatBot() {
     e?.preventDefault();
     if (!input.trim()) return;
     setError(null);
+
+    // Reset scroll state when user sends a new message
+    resetScrollState();
+
     const userMsg: Message = { id: Date.now().toString(), role: 'user', content: input };
     setMessages((prev) => [...prev, userMsg]);
     setInput('');
+
+    // Scroll to bottom after user sends message
+    setTimeout(() => scrollToBottom(), 0);
 
     const assistantId = Date.now().toString() + '-a';
     const assistantMsg: Message = { id: assistantId, role: 'assistant', content: '' };
