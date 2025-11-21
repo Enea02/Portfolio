@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t('progects.title1')} <span className="gradient-text">{t('progects.title2')}</span>
+            {t('projects.title1')} <span className="gradient-text">{t('projects.title2')}</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             {t('projects.description')}
