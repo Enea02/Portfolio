@@ -177,6 +177,7 @@
         "sending": "Sending...",
         "sendButton": "Send Message",
         "successMessage": "✓ Message sent successfully! I'll get back to you soon.",
+        "errorMessage": "An error occurred while sending your message. Please try again later.",
         "infoTitle": "Information",
         "emailTitle": "Email",
         "locationTitle": "Location",

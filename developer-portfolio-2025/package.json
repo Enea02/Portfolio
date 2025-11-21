@@ -27,6 +27,7 @@
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-i18next": "^16.2.4",
+    "resend": "^6.5.2",
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
