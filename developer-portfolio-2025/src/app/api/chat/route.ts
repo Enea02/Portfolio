@@ -19,9 +19,9 @@ export async function POST(req: Request) {
   }
  
 
-  const result = streamText({
+  const result = streamText({//claude-sonnet-4-20250514
 
-    model: anthropic('claude-sonnet-4-20250514'),
+    model: anthropic('claude-haiku-4-5-20251001'), //claude-haiku-4-5-20251001
 
     system: `Sei un assistente AI amichevole e professionale per il portfolio di uno sviluppatore full-stack.
 
