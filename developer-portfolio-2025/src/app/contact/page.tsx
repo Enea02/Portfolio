@@ -219,10 +219,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs text-gray-500 dark:text-gray-500">{t('contact.emailTitle')}</p>
                     <a 
-                      href={`mailto:${PERSONAL_INFO.email}`}
+                      href={`mailto:{t('personal-info.email')}`}
                       className="text-sm font-medium text-gray-900 dark:text-white hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                     >
-                      {PERSONAL_INFO.email}
+                      {t('personal-info.email')}
                     </a>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs text-gray-500 dark:text-gray-500">{t('contact.locationTitle')}</p>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">
-                      {PERSONAL_INFO.location}
+                      {t('personal-info.location')}
                     </p>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                     <p className="text-sm font-medium text-gray-900 dark:text-white">
-                      {PERSONAL_INFO.availability}
+                      { t('contact.availablity') }
                     </p>
                   </div>
                 </div>

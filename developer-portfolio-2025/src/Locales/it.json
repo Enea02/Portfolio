@@ -184,5 +184,37 @@
         "socialTitle": "Social",
         "responseTime": "< 24h",
         "responseTimeLabel": "Tempo medio di risposta"
+    },
+    "aiAssistant": {
+        "title": "Assistente IA",
+        "description": "Fai domande e ricevi risposte generate da un LLM ospitato. Le risposte vengono trasmesse in tempo reale.",
+        "placeholder": "Scrivi il messaggio e premi Invio...",
+        "send": "Invia",
+        "clear": "Pulisci",
+        "systemMessage": "Sei un assistente utile.",
+        "features": {
+            "streaming": {
+                "title": "Risposte in streaming",
+                "description": "Le risposte vengono inviate in modo incrementale per un'interazione in tempo reale."
+            },
+            "memory": {
+                "title": "Memoria contestuale",
+                "description": "L'assistente mantiene il contesto della conversazione per risposte migliori."
+            },
+            "privacy": {
+                "title": "Privacy",
+                "description": "Gli input vengono inviati al gateway AI configurato; non condividere segreti."
+            }
+        },
+        "error": {
+            "noApiKey": "Chiave API server non configurata. Imposta `AI_GATEWAY_API_KEY`.",
+            "requestFailed": "Impossibile contattare il servizio AI. Riprova più tardi."
+        }
+    },
+    "progects":{
+        "title1": "I Miei",
+        "title2": "Progetti",
+        "description": "Una raccolta di progetti che mostrano le mie competenze in sviluppo software, integrazione di sistemi e soluzioni innovative.",
+        "viewProject": "Vedi Progetto"
     }
 }

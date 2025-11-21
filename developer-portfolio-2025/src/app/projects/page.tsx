@@ -37,11 +37,10 @@ export default function ProjectsPage() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            I miei <span className="gradient-text">Progetti</span>
+            {t('progects.title1')} <span className="gradient-text">{t('progects.title2')}</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Una collezione di progetti che dimostrano le mie competenze in sviluppo full-stack, 
-            AI integration, cloud architecture e DevOps practices
+            {t('projects.description')}
           </p>
         </motion.div>
 

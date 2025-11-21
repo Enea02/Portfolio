@@ -11,7 +11,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.45",
+    "@nanostores/react": "github:ai/react",
     "@vercel/analytics": "^1.5.0",
+    "ai": "^5.0.98",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.0",
     "gsap": "^3.13.0",
