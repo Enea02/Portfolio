@@ -9,6 +9,6 @@ export default function HomePage() {
       <Hero />
       <TechStack />
       <FeaturedProjects />
-    </>
+    </> 
   );
 }
