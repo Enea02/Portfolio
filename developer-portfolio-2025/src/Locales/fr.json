@@ -126,6 +126,7 @@
         "sending": "Envoi en cours...",
         "sendButton": "Envoyer le message",
         "successMessage": "✓ Message envoyé avec succès! Je vous répondrai bientôt.",
+        "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
         "infoTitle": "Informations",
         "emailTitle": "Email",
         "locationTitle": "Localisation",
