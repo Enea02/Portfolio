@@ -184,7 +184,8 @@
         "statusTitle": "Stato",
         "socialTitle": "Social",
         "responseTime": "< 24h",
-        "responseTimeLabel": "Tempo medio di risposta"
+        "responseTimeLabel": "Tempo medio di risposta",
+        "availablity": "Assunto"
     },
     "aiAssistant": {
         "title": "Assistente IA",

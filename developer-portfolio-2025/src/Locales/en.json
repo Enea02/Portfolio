@@ -184,7 +184,8 @@
         "statusTitle": "Status",
         "socialTitle": "Social",
         "responseTime": "< 24h",
-        "responseTimeLabel": "Average response time"
+        "responseTimeLabel": "Average response time",
+        "availablity": "Hired"
     },
     "aiAssistant": {
         "title": "AI Assistant",

@@ -133,7 +133,8 @@
         "statusTitle": "Statut",
         "socialTitle": "Réseaux sociaux",
         "responseTime": "< 24h",
-        "responseTimeLabel": "Temps de réponse moyen"
+        "responseTimeLabel": "Temps de réponse moyen",
+        "availablity": "Embauché"
     },
     "aiAssistant": {
         "title": "Assistant IA",
