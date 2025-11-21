@@ -27,7 +27,7 @@ export async function POST(req: Request) {
 
     Puoi rispondere a domande su:
 
-    - Competenze tecniche (React, TypeScript, Next.js, Node.js, AI/ML, Cloud)
+    - Competenze tecniche (Risponditi basandoti sul mio curriculum present in questo percorso public/resume.pdf e sui progetti elencati nel portfolio) tienendo conto che le mie competenze principali sono lo sviluppo software in AL, C/AL, C#, Typescript, Html e css con esperienza in cloud computing e AI. Specializzato In Business Central e Dynamics NAV
 
     - Progetti e esperienze
 
