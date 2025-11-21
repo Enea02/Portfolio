@@ -1,6 +1,6 @@
 'use client';
 
- 
+
 
 import React from 'react';
 
@@ -12,9 +12,14 @@ import { ChatBot } from '@/components/chat/ChatBot';
 
 import { Card, CardContent } from '@/components/ui/Card';
 
- 
+import { useTranslation } from 'react-i18next';
+
+
 
 export default function ChatPage() {
+
+  const { t } = useTranslation();
+
 
   const features = [
 
@@ -22,9 +27,9 @@ export default function ChatPage() {
 
       icon: Sparkles,
 
-      title: 'AI-Powered',
+      title: t('aiAssistant.page.featureAiPowered'),
 
-      description: 'Powered by Claude AI',
+      description: t('aiAssistant.page.featureAiPoweredDesc'),
 
     },
 
@@ -32,9 +37,9 @@ export default function ChatPage() {
 
       icon: Zap,
 
-      title: 'Risposte Istantanee',
+      title: t('aiAssistant.page.featureInstantResponses'),
 
-      description: 'Ottieni risposte immediate',
+      description: t('aiAssistant.page.featureInstantResponsesDesc'),
 
     },
 
@@ -42,9 +47,9 @@ export default function ChatPage() {
 
       icon: Shield,
 
-      title: 'Sempre Disponibile',
+      title: t('aiAssistant.page.featureAlwaysAvailable'),
 
-      description: '24/7 a tua disposizione',
+      description: t('aiAssistant.page.featureAlwaysAvailableDesc'),
 
     },
 
@@ -78,15 +83,13 @@ export default function ChatPage() {
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
 
-            <span className="gradient-text">AI Assistant</span>
+            <span className="gradient-text">{t('aiAssistant.page.title')}</span>
 
           </h1>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
 
-            Chatta con il mio assistente AI per saperne di più sulle mie competenze,
-
-            progetti e disponibilità per collaborazioni.
+            {t('aiAssistant.page.description')}
 
           </p>
 
@@ -170,9 +173,7 @@ export default function ChatPage() {
 
         >
 
-          Questo assistente utilizza intelligenza artificiale.
-
-          Le risposte potrebbero non essere sempre accurate.
+          {t('aiAssistant.page.disclaimer')}
 
         </motion.p>
 

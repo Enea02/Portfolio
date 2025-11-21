@@ -209,6 +209,17 @@
         "error": {
             "noApiKey": "Server API key not configured. Set `AI_GATEWAY_API_KEY`.",
             "requestFailed": "Unable to reach the AI service. Please try again later."
+        },
+        "page": {
+            "title": "AI Assistant",
+            "description": "Chat with my AI assistant to learn more about my skills, projects, and availability for collaborations.",
+            "featureAiPowered": "AI-Powered",
+            "featureAiPoweredDesc": "Powered by Claude AI",
+            "featureInstantResponses": "Instant Responses",
+            "featureInstantResponsesDesc": "Get immediate answers",
+            "featureAlwaysAvailable": "Always Available",
+            "featureAlwaysAvailableDesc": "24/7 at your service",
+            "disclaimer": "This assistant uses artificial intelligence. Responses may not always be accurate."
         }
     },
     "projects":{

@@ -209,6 +209,17 @@
         "error": {
             "noApiKey": "Chiave API server non configurata. Imposta `AI_GATEWAY_API_KEY`.",
             "requestFailed": "Impossibile contattare il servizio AI. Riprova più tardi."
+        },
+        "page": {
+            "title": "Assistente IA",
+            "description": "Chatta con il mio assistente AI per saperne di più sulle mie competenze, progetti e disponibilità per collaborazioni.",
+            "featureAiPowered": "AI-Powered",
+            "featureAiPoweredDesc": "Powered by Claude AI",
+            "featureInstantResponses": "Risposte Istantanee",
+            "featureInstantResponsesDesc": "Ottieni risposte immediate",
+            "featureAlwaysAvailable": "Sempre Disponibile",
+            "featureAlwaysAvailableDesc": "24/7 a tua disposizione",
+            "disclaimer": "Questo assistente utilizza intelligenza artificiale. Le risposte potrebbero non essere sempre accurate."
         }
     },
     "progects":{
