@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
@@ -13,16 +13,46 @@ export function ChatBot() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [userHasScrolled, setUserHasScrolled] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  const messagesContainerRef = useRef<HTMLDivElement | null>(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // Check if user is near the bottom of the chat
+  const isNearBottom = useCallback(() => {
+    const container = messagesContainerRef.current;
+    if (!container) return true;
+    const threshold = 100; // pixels from bottom
+    return container.scrollHeight - container.scrollTop - container.clientHeight < threshold;
+  }, []);
 
+  const scrollToBottom = useCallback(() => {
+    // Only auto-scroll if user hasn't scrolled up manually
+    if (!userHasScrolled || isNearBottom()) {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [userHasScrolled, isNearBottom]);
+
+  // Handle user scroll - detect if they scrolled up
+  const handleScroll = useCallback(() => {
+    if (!isNearBottom()) {
+      setUserHasScrolled(true);
+    } else {
+      setUserHasScrolled(false);
+    }
+  }, [isNearBottom]);
+
+  // Only scroll to bottom when a NEW user message is added (not on initial load)
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1];
+      // Reset userHasScrolled when user sends a new message
+      if (lastMessage.role === 'user') {
+        setUserHasScrolled(false);
+        scrollToBottom();
+      }
+    }
+  }, [messages, scrollToBottom]);
 
   const suggestedQuestions = [
     'Quali sono le tue competenze principali?',
@@ -83,7 +113,11 @@ export function ChatBot() {
     <div className="flex flex-col h-[600px] max-h-[70vh]">
       <Card className="flex-1 overflow-hidden">
         <CardContent className="p-0 h-full flex flex-col">
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div
+              ref={messagesContainerRef}
+              onScroll={handleScroll}
+              className="flex-1 overflow-y-auto p-4 space-y-4"
+            >
             {messages.length === 0 && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center py-8">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 mb-4">
