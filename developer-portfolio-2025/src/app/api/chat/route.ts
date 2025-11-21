@@ -11,11 +11,11 @@ export const maxDuration = 30;
 export async function POST(req: Request) {
 
   const { messages } = await req.json();
-  // Do NOT keep API keys in source code. Set `AI_GATEWAY_API_KEY` in your
-  // environment (e.g. `.env.local`) and keep it out of version control.
-  const apiKey = process.env.AI_GATEWAY_API_KEY;
+  // The Anthropic SDK looks for ANTHROPIC_API_KEY environment variable by default
+  // Set it in `.env.local` and keep it out of version control
+  const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    return new Response('AI_GATEWAY_API_KEY not configured on server', { status: 500 });
+    return new Response('ANTHROPIC_API_KEY not configured on server', { status: 500 });
   }
  
 
