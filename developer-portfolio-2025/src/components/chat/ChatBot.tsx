@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
@@ -14,39 +14,56 @@ export function ChatBot() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const messagesContainerRef = useRef<HTMLDivElement | null>(null);
-  // Use ref instead of state for immediate synchronous updates during streaming
   const userHasScrolledRef = useRef(false);
+  const isStreamingRef = useRef(false);
 
   // Check if user is near the bottom of the chat
   const isNearBottom = useCallback(() => {
     const container = messagesContainerRef.current;
     if (!container) return true;
-    const threshold = 100; // pixels from bottom
+    const threshold = 150;
     return container.scrollHeight - container.scrollTop - container.clientHeight < threshold;
   }, []);
 
-  const scrollToBottom = useCallback(() => {
-    // Only auto-scroll if user hasn't scrolled up manually
-    // Using ref for immediate check without React state delay
-    if (!userHasScrolledRef.current) {
-      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // ✅ SOLUZIONE: Scrolla SOLO il container della chat, non la pagina
+  const scrollToBottom = useCallback((smooth = true) => {
+    if (!userHasScrolledRef.current && messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTo({
+        top: messagesContainerRef.current.scrollHeight,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
     }
   }, []);
 
-  // Handle user scroll - detect if they scrolled up
+  const scrollTimeoutRef = useRef<NodeJS.Timeout>();
+  
   const handleScroll = useCallback(() => {
-    // User scrolled up - stop auto-scroll
-    if (!isNearBottom()) {
-      userHasScrolledRef.current = true;
-    } else {
-      // User is at bottom - re-enable auto-scroll
-      userHasScrolledRef.current = false;
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
     }
+
+    const debounceTime = isStreamingRef.current ? 300 : 100;
+    
+    scrollTimeoutRef.current = setTimeout(() => {
+      const nearBottom = isNearBottom();
+      
+      if (!nearBottom && !isStreamingRef.current) {
+        userHasScrolledRef.current = true;
+      } else if (nearBottom) {
+        userHasScrolledRef.current = false;
+      }
+    }, debounceTime);
   }, [isNearBottom]);
 
-  // Reset scroll state when user sends a new message
+  useEffect(() => {
+    return () => {
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const resetScrollState = useCallback(() => {
     userHasScrolledRef.current = false;
   }, []);
@@ -65,14 +82,12 @@ export function ChatBot() {
     if (!input.trim()) return;
     setError(null);
 
-    // Reset scroll state when user sends a new message
     resetScrollState();
 
     const userMsg: Message = { id: Date.now().toString(), role: 'user', content: input };
     setMessages((prev) => [...prev, userMsg]);
     setInput('');
 
-    // Scroll to bottom after user sends message
     setTimeout(() => scrollToBottom(), 0);
 
     const assistantId = Date.now().toString() + '-a';
@@ -81,8 +96,8 @@ export function ChatBot() {
 
     try {
       setIsLoading(true);
+      isStreamingRef.current = true;
 
-      // Prepare messages for API: map to { role, content }
       const payload = messages.concat(userMsg).map((m) => ({ role: m.role, content: m.content }));
 
       const res = await fetch('/api/chat', {
@@ -98,18 +113,31 @@ export function ChatBot() {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
 
+      let lastScrollTime = 0;
+      const scrollThrottle = 100;
+
       while (true) {
         const { value, done } = await reader.read();
         if (done) break;
+        
         const chunk = decoder.decode(value, { stream: true });
         setMessages((prev) => prev.map((m) => (m.id === assistantId ? { ...m, content: m.content + chunk } : m)));
-        scrollToBottom();
+        
+        const now = Date.now();
+        if (now - lastScrollTime > scrollThrottle) {
+          scrollToBottom(false); // instant scroll durante streaming
+          lastScrollTime = now;
+        }
       }
+      
+      scrollToBottom(true); // smooth scroll finale
+      
     } catch (err) {
       console.error(err);
       setError('Si è verificato un errore. Riprova più tardi.');
     } finally {
       setIsLoading(false);
+      isStreamingRef.current = false;
     }
   };
 
@@ -118,10 +146,10 @@ export function ChatBot() {
       <Card className="flex-1 overflow-hidden">
         <CardContent className="p-0 h-full flex flex-col">
           <div
-              ref={messagesContainerRef}
-              onScroll={handleScroll}
-              className="flex-1 overflow-y-auto p-4 space-y-4"
-            >
+            ref={messagesContainerRef}
+            onScroll={handleScroll}
+            className="flex-1 overflow-y-auto p-4 space-y-4"
+          >
             {messages.length === 0 && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center py-8">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 mb-4">
@@ -191,8 +219,6 @@ export function ChatBot() {
                 <p className="text-red-500 text-sm">{error}</p>
               </motion.div>
             )}
-
-            <div ref={messagesEndRef} />
           </div>
 
           <div className="border-t border-gray-200 dark:border-gray-700 p-4">
