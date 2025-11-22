@@ -51,6 +51,8 @@ export const TECH_STACK: TechStack[] = [
     technologies: [
       { name: 'HTML/CSS', proficiency: 'advanced', yearsOfExperience: 3 },
       { name: 'Node.js', proficiency: 'advanced', yearsOfExperience: 2 },
+      { name: 'Next.js', proficiency: 'advanced', yearsOfExperience: 0.5 },
+      { name: 'TailwindCSS', proficiency: 'advanced', yearsOfExperience: 0.5 },
       { name: 'ASP.NET', proficiency: 'intermediate', yearsOfExperience: 1 },
       { name: 'Bootstrap', proficiency: 'intermediate', yearsOfExperience: 1 },
       
@@ -68,7 +70,7 @@ export const TECH_STACK: TechStack[] = [
     technologies: [
       { name: 'Business Central/AL', proficiency: 'intermediate', yearsOfExperience: 1 },
       { name: 'Azure', proficiency: 'intermediate', yearsOfExperience: 1 },
-      { name: 'Freshdesk API', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'API', proficiency: 'intermediate', yearsOfExperience: 1 },
       { name: 'Dynamics NAV', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
@@ -85,7 +87,8 @@ export const TECH_STACK: TechStack[] = [
     technologies: [
       { name: 'Git/GitHub', proficiency: 'advanced', yearsOfExperience: 3 },
       { name: 'UML', proficiency: 'intermediate', yearsOfExperience: 2 },
-      { name: 'Agile', proficiency: 'intermediate', yearsOfExperience: 1 },
+      { name: 'Vibe Coding', proficiency: 'intermediate', yearsOfExperience: 0.5 },
+      { name: 'DevOps', proficiency: 'intermediate', yearsOfExperience: 1 },
     ],
   },
 ];
